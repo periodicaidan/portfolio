@@ -20,20 +20,22 @@ class Project {
    }
 
    makeCard() {
-        return `<div class="card col-6 col-md-12">
-            <div class="card-header">
-                <h4 class="card-title">${this.title}</h4>
-                <p class="card-subtitle text-gray">${this.language}</p>
+        return `<div class="column col-6 col-md-12 my-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">${this.title}</h4>
+                    <span class="card-subtitle text-gray text-uppercase">${this.language}</span>
+                </div>
+                <div class="divider"></div>
+                <div class="card-body">
+                    ${this.description}
+                </div>
+                <div class="card-footer">
+                    <a href="${this.demo}" target="_blank" class="btn btn-success" ${this.demo == null && 'disabled'}>Demo</a>
+                    <a href="${this.repo}" target="_blank" class="btn btn-secondary">Repo</a>
+                </div>
             </div>
-            <div class="divider"></div>
-            <div class="card-body">
-                ${this.description}
-            </div>
-            <div class="card-footer">
-                <a href="${this.demo}" target="_blank" class="btn btn-success" ${this.demo == null && 'disabled'}>Demo</a>
-                <a href="${this.repo}" target="_blank" class="btn btn-secondary">Repo</a>
-            </div>
-        </div>`
+        </div>`;
    }        
 }
 
@@ -44,6 +46,42 @@ let projects = [
         'Makes use of the Entrez eutils to make queries for biomolecular strucutres',
         'NCBI-Model-Organism-Inspector',
         'summer-mute'
+    ),
+
+    Project.githubHosted(
+        'Weather Dashboard',
+        'JavaScript',
+        'A simple weather dashboard',
+        'weather-dashboard'
+    ),
+
+    Project.githubHosted(
+        'Work Day Scheduler',
+        'JavaScript',
+        'A simple day-planner',
+        'work-day-planner'
+    ),
+
+    new Project(
+        'GBARS',
+        'Rust',
+        'Experimental GameBoy emulator written in Rust',
+        'https://github.com/periodicaidan/gbars',
+        null,
+    ),
+
+    new Project(
+        'TDLib for Dart',
+        'Dart',
+        'Dart port of the Telegram Database Library (TDLib)',
+        'https://github.com/periodicaidan/dart_tdlib'
+    ),
+
+    new Project(
+        'kmeans',
+        'Rust',
+        'A k-means implementation in Rust',
+        'https://github.com/periodicaidan/kmeans'
     )
 ];
 
