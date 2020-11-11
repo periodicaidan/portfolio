@@ -49,6 +49,14 @@ let projects = [
     ),
 
     Project.githubHosted(
+        'Merx',
+        'JavaScript',
+        'A site for planning your speedruns',
+        'Merx',
+        'TristanGarvin'
+    ),
+
+    Project.githubHosted(
         'Weather Dashboard',
         'JavaScript',
         'A simple weather dashboard',
@@ -82,6 +90,13 @@ let projects = [
         'Rust',
         'A k-means implementation in Rust',
         'https://github.com/periodicaidan/kmeans'
+    ),
+
+    new Project(
+        'bfc.hs',
+        'Haskell',
+        'Brainfuck compiler written in 2 days in Haskell',
+        'https://github.com/periodicaidan/bfc.hs'
     )
 ];
 
