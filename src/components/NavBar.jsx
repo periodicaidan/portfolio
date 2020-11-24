@@ -22,22 +22,28 @@ export default function NavBar(props) {
                     <a href="#" className="btn btn-link">socials</a>
                     <div className="popover-container">
                         <ul className="menu">
-                            {socialMediaData.map(social => (
-                                <li className="menu-item">
-                                    <a 
-                                        href={social.url} 
-                                        className="btn btn-link tooltip"
-                                        target="_blank"
-                                        data-tooltip={social.name}
-                                    >
-                                        <i className={social.icon}></i>
-                                    </a>
-                                </li>
-                            ))}
+                            {socialMediaData.map(social => <SocialMenuItem {...social} />)}
                         </ul>
                     </div>
                 </div>
             </section>
         </header>
     );
+}
+
+function SocialMenuItem(props) {
+    const { name, url, icon } = props;
+
+    return (
+        <li className="menu-item">
+            <a 
+                href={url} 
+                className="btn btn-link tooltip"
+                target="_blank"
+                data-tooltip={name}
+            >
+                <i className={icon}></i>
+            </a>
+        </li>
+    )
 }
