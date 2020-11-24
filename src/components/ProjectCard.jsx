@@ -1,9 +1,15 @@
 import React from 'react';
 
-export function ProjectCard(props) {
-    const { githubHosted, title, lang, description } = props;
+export default function ProjectCard(props) {
+    const { title, lang, description } = props;
+    const { githubHosted, name } = props;
+    const owner = props.owner ?? 'periodicaidan';
+
     const { repo, demo } = githubHosted 
-        ? { repo: `https://github.com/${owner}/${name}`, demo: `https://${owner}.github.io/${name}` }
+        ? { 
+            repo: `https://github.com/${owner}/${name}`, 
+            demo: `https://${owner}.github.io/${name}` 
+        }
         : props;
     
     return (

@@ -1,8 +1,13 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import projectData from '../data/projects.json';
 
 export default function Home(props) {
     return (
-        <h1 class="h3">Hello World!</h1>
+        <main>
+            <div className="columns">
+                {projectData.map(project => <ProjectCard {...project} />)}
+            </div>
+        </main>
     );
 }
