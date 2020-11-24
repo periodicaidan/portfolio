@@ -1,6 +1,17 @@
 import React from 'react';
+import projectData from '../data/projects.json';
 
-export default function ProjectCard(props) {
+export default function ProjectShowcase(props) {
+    return (
+        <main className="container" style={{ width: '80%', margin: 'auto' }}>
+            <div className="columns">
+                {projectData.map(project => <ProjectCard {...project} />)}
+            </div>
+        </main>
+    )
+}
+
+function ProjectCard(props) {
     const { title, lang, description } = props;
     const { githubHosted, name } = props;
     const owner = props.owner ?? 'periodicaidan';

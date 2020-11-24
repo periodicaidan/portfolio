@@ -8,12 +8,11 @@
         "name": "NCBI-Model-Organism-Inspector"
     },
     {
-        "githubHosted": true,
         "title": "Merx",
         "lang": "JavaScript",
         "description": "A site for planning your speedruns",
-        "owner": "TristanGarvin",
-        "name": "Merx"
+        "repo": "https://github.com/TristanGarvin/Merx",
+        "demo": "https://merx-speedrun.herokuapp.com"
     },
     {
         "githubHosted": true,

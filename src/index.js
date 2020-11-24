@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import 'spectre.css/dist/spectre.min.css';
+import 'spectre.css/dist/spectre-exp.min.css';
+import 'spectre.css/dist/spectre-icons.min.css';
+
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/solid.min.css';
 import '@fortawesome/fontawesome-free/css/brands.min.css';
