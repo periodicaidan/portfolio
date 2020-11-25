@@ -1,0 +1,14 @@
+#banner {
+    background: url(../images/vaporwaveshit.jpg) no-repeat fixed center top !important;
+    background-size: cover !important;
+}
+
+#banner .hero-body {
+    text-shadow: 0 0 0.5em brown;
+}
+
+header.navbar,
+main .container {
+    width: 80%;
+    margin: auto;
+}
