@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer(props) {
+export default function Footer(_props) {
     return (
         <footer className="hero hero-sm bg-secondary">
             <div className="hero-body">
@@ -11,5 +11,5 @@ export default function Footer(props) {
                 </p>
             </div>
         </footer>
-    )
+    );
 }

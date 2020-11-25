@@ -1,21 +1,31 @@
 import React from 'react';
 import projectData from '../data/projects.json';
 
-export default function ProjectShowcase(props) {
+export default function ProjectShowcase(_props) {
     return (
         <main className="container" style={{ width: '80%', margin: 'auto' }}>
             <div className="columns">
                 {projectData.map(project => <ProjectCard {...project} />)}
             </div>
         </main>
-    )
+    );
 }
 
 function ProjectCard(props) {
+    // This would be so much easier to explain in TSX but...
+    // The props can be one of these (all fields are strings unless otherwise annotated): 
+    //      { title, lang, description, repo, demo }
+    //      { title, lang, description, githubHosted: boolean, owner, name }
+    
+    // First we get out the common fields: title, lang, and description
     const { title, lang, description } = props;
+
+    // Now we get out the props for the 2nd type
     const { githubHosted, name } = props;
     const owner = props.owner ?? 'periodicaidan';
 
+    // Finally get the repo and demo, either by constructing them from the 2nd type
+    // or just by destructuring props again
     const { repo, demo } = githubHosted 
         ? { 
             repo: `https://github.com/${owner}/${name}`, 

@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import ProjectShowcase from '../components/ProjectShowcase';
 import Footer from '../components/Footer';
 
-export default function Home(props) {
+export default function Home(_props) {
     return <>
         <NavBar />
         <Hero />

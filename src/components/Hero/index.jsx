@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-export default function Hero(props) {
+export default function Hero(_props) {
     return (
         <div id="banner" className="hero hero-lg bg-primary">
             <div className="hero-body">
@@ -9,5 +9,5 @@ export default function Hero(props) {
                 <p className="text-center text-uppercase text-light">An Overview</p>
             </div>
         </div>
-    )
+    );
 }
