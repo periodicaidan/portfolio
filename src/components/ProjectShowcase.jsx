@@ -4,6 +4,8 @@ import projectData from '../data/projects.json';
 export default function ProjectShowcase(_props) {
     return (
         <main className="container" style={{ width: '80%', margin: 'auto' }}>
+            <h2 className="mt-2">Projects</h2>
+            <div className="divider"></div>
             <div className="columns">
                 {projectData.map(project => <ProjectCard {...project} />)}
             </div>
