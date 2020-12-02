@@ -1,5 +1,5 @@
 #banner {
-    background: url(./vaporwaveshit.jpg) no-repeat fixed center top !important;
+    background: linear-gradient(rgba(22,17,44,0.2), rgba(22,17,44,0.6)),url(./vaporwaveshit.jpg) no-repeat fixed center top !important;
     background-size: cover !important;
 }
 
