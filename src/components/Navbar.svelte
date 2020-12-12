@@ -31,3 +31,10 @@ import SocialMenuItem from './SocialMenuItem.svelte';
     </div>
   </section>
 </header>
+
+<style>
+  header.navbar {
+    width: 80% !important;
+    margin: auto !important;
+  }
+</style>
