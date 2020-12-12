@@ -18,7 +18,7 @@ import SocialMenuItem from './SocialMenuItem.svelte';
 
   <!-- Right Section -->
   <section class="navbar-section">
-    <a href="assets/ATManningResume" target="_blank" rel="noopener noreferrer" class="btn btn-link">resume</a>
+    <a href="assets/ATManningResume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-link">resume</a>
     <div class="popover popover-bottom">
       <a href="#" class="btn btn-link">socials</a>
       <div class="popover-container">
