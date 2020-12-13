@@ -1,5 +1,12 @@
 export default [
     {
+        title: "FEconvert",
+        lang: "JavaScript/React",
+        description: "Client-side multimedia conversion with FFmpeg and WebAssembly",
+        repo: "https://github.com/periodicaidan/FEconvert",
+        demo: "https://feconvert.herokuapp.com"
+    },
+    {
         githubHosted: true,
         title: "NCBI Model Organism Insepctor",
         lang: "JavaScript",
@@ -13,13 +20,6 @@ export default [
         description: "A site for planning your speedruns",
         repo: "https://github.com/TristanGarvin/Merx",
         demo: "https://merx-speedrun.herokuapp.com"
-    },
-    {
-        githubHosted: true,
-        title: "Work Day Scheduler",
-        lang: "JavaScript",
-        description: "A simple day-planner",
-        name: "work-day-planner"
     },
     {
         title: "GBARS",

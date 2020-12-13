@@ -9,6 +9,7 @@
   export let demo = githubHosted && `https://${owner}.github.io/${name}`;
 </script>
 
+<!-- TODO: Semantic HTML/a11y -->
 <div class="column col-6 col-md-12 my-2">
   <div class="card">
     <div class="card-header">
@@ -20,7 +21,11 @@
       {description}
     </div>
     <div class="card-footer">
-      <a href={demo} target="_blank" rel="noopener noreferrer" class="btn btn-success" disabled={!demo}>Demo</a>
+      <!-- Svelte doesn't seem to like `disabled` on a elements, 
+        so I opted to just use the "disabled" class with aria-disabled for a11y -->
+      <a href={demo} target="_blank" rel="noopener noreferrer" class="btn btn-success" class:disabled={!demo} aria-disabled={!demo}>
+        Demo
+      </a>
       <a href={repo} target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Repo</a>
     </div>
   </div>
