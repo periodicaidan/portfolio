@@ -21,7 +21,7 @@
       {description}
     </div>
     <div class="card-footer">
-      <!-- Svelte doesn't seem to like `disabled` on a elements, 
+      <!-- Svelte doesn't seem to like `disabled` on `a` elements, 
         so I opted to just use the "disabled" class with aria-disabled for a11y -->
       <a href={demo} target="_blank" rel="noopener noreferrer" class="btn btn-success" class:disabled={!demo} aria-disabled={!demo}>
         Demo
